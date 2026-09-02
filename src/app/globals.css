@@ -74,3 +74,93 @@ body {
   border-radius: 0.75rem; 
   background: white; 
 } 
+
+
+.musicPage {
+  width: min(100% - 2rem, 64rem);
+  margin-inline: auto;
+  padding-block: 3rem;
+}
+
+.musicPage-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #111111;
+  margin: 0 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.musicGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.75rem;
+}
+
+.musicCard {
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.musicCard-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #ededed;
+}
+
+.musicCard-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.musicCard:hover .musicCard-media img {
+  filter: grayscale(0);
+}
+
+.musicCard-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.musicCard-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 0.25rem;
+}
+
+.musicCard-genre {
+  font-size: 0.875rem;
+  color: #6b6b6b;
+  margin: 0 0 1rem;
+}
+
+.musicCard-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 0 0 1rem;
+}
+
+.musicCard-row {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0 0 0.85rem;
+  white-space: pre-line;
+}
+
+.musicCard-row:last-child {
+  margin-bottom: 0;
+}
+
+.musicCard-label {
+  display: block;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 0.15rem;
+}

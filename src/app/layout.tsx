@@ -26,7 +26,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body>
         <header className="siteHeader">
-          <Navbar />
         </header>
         <div>
           {children}
